@@ -7,15 +7,19 @@
 
 import Foundation
 
-let weekDays: [String] = [
-    "日",
-    "月",
-    "火",
-    "水",
-    "木",
-    "金",
-    "土"
-]
+public class CalendarGadgets {
+    let weekDays: [String] = [
+        "日",
+        "月",
+        "火",
+        "水",
+        "木",
+        "金",
+        "土"
+    ]
+}
+
+
 
 
 

@@ -8,8 +8,20 @@
 import SwiftUI
 
 struct Calendar: View {
+    @State var wd: String = ""
+    let weekDays:[String] = CalendarGadgets().weekDays
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack(alignment:.leading) {
+            HStack(alignment:.center) {
+                ForEach(weekDays, id:\.self) { v in
+                    Text("\(v)")
+                        .onTapGesture {
+                            wd = v
+                        }
+                }
+            }
+            Text("\(wd)")
+        }
     }
 }
 
